@@ -48,7 +48,7 @@ public class TestCadastroEmailDiferente {
 		driver.findElement(By.id("txtConfirmaSenhaCadastro")).clear();
 		driver.findElement(By.id("txtConfirmaSenhaCadastro")).sendKeys(
 				"ihu287f2@");
-		driver.findElement(By.cssSelector("label.clear")).click();
+		//driver.findElement(By.cssSelector("label.clear")).click();
 		driver.findElement(By.id("chkNovidades")).click();
 		driver.findElement(By.id("btnConfirmarCadastro")).click();
 		driver.findElement(By.id("txtEmailCadastro")).click();
