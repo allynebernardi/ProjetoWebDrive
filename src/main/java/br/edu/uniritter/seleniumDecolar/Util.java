@@ -1,8 +1,5 @@
 package br.edu.uniritter.seleniumDecolar;
 
-
-
-import org.junit.After;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
