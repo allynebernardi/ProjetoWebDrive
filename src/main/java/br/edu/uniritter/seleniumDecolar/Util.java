@@ -15,14 +15,6 @@ public class Util {
 	  private StringBuffer verificationErrors = new StringBuffer();
 
 	
-	  public void tearDown() throws Exception {
-	    driver.quit();
-	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString)) {
-	    //  fail(verificationErrorString);
-	    }
-	  }
-
 	  private boolean isElementPresent(By by) {
 	    try {
 	      driver.findElement(by);
