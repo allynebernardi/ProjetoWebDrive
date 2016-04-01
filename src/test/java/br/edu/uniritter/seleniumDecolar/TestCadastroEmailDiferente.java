@@ -25,7 +25,7 @@ public class TestCadastroEmailDiferente {
 	@Test
 	public void testCadastroEmailDiferente() throws Exception {
 		driver.get(baseUrl + "/?gclid=CLjts8TyzMsCFYclgQodjdQPQA");
-		driver.findElement(By.id("lnkCadastroHeader")).click();
+		//driver.findElement(By.id("lnkCadastroHeader")).click();
 		driver.findElement(By.id("txtNomeCadastro")).click();
 		driver.findElement(By.id("txtNomeCadastro")).click();
 		driver.findElement(By.id("txtNomeCadastro")).click();
