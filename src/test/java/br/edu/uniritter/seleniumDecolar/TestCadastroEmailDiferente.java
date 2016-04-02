@@ -1,4 +1,4 @@
-package com.example.tests;
+package br.edu.uniritter.seleniumDecolar;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
