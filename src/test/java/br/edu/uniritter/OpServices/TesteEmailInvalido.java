@@ -1,4 +1,4 @@
-package br.edu.uniritter.seleniumDecolar;
+package br.edu.uniritter.OpServices;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-public class TesteCartaoCreditoFinanciamentoFatura {
+public class TesteEmailInvalido {
 private WebDriver driver;
 private String baseUrl;
 private boolean acceptNextAlert = true;

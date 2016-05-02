@@ -1,4 +1,4 @@
-package br.edu.uniritter.seleniumDecolar;
+package br.edu.uniritter.OpServices;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

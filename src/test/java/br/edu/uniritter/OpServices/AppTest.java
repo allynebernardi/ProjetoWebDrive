@@ -1,4 +1,4 @@
-package br.edu.uniritter.seleniumDecolar;
+package br.edu.uniritter.OpServices;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
