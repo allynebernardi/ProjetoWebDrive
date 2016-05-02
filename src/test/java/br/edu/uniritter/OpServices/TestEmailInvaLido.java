@@ -9,24 +9,24 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import br.edu.uniritter.interacao.DonwloadInteracao;
+
+import br.edu.uniritter.interacao.DownloadInteracao;
 
 public class TestEmailInvalido {
 
 	private StringBuffer verificationErrors = new StringBuffer();
-	private DonwloadInteracao downloadInteracao;
+	private DownloadInteracao downloadInteracao;
 	private boolean acceptNextAlert = true;
 	@Before
 	public void setUp() throws Exception {
 		Util.init();
-		downloadInteracao = new DonwloadInteracao();
+		downloadInteracao = new DownloadInteracao();
 	}
 
 	@Test
 	public void testEmailInvaLido() throws Exception {
 
-		Util.driver.get(Util.URL_BASE + "/");
-		// driver.get(baseUrl + "/#q=opservices&gws_rd=cr");
+		Util.driver.get(Util.URL_BASE + "/#q=opservices&gws_rd=cr");
 		downloadInteracao.PaginaInicial();
 		downloadInteracao.Cadastro();
 		downloadInteracao.clearName();

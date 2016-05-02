@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import br.edu.uniritter.interacao.DonwloadInteracao;
+import br.edu.uniritter.interacao.DownloadInteracao;
 import br.edu.uniritter.interacao.FaleConoscoInteracao;
 
 public class TesteFaleConoscoDadosIncompletos {

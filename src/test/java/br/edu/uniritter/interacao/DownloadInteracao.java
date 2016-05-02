@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import br.edu.uniritter.pages.DonwloadPage;;
 
-public class DonwloadInteracao extends DonwloadPage {
+public class DownloadInteracao extends DonwloadPage {
 
 	public void PaginaInicial() {
 		paginaInicial.click();
