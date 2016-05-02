@@ -37,6 +37,9 @@ public class DonwloadPage {
 	@FindBy(name = "estado")
 	protected WebElement estado;
 	
+	@FindBy(name = "mensagem")
+	protected WebElement mensagem;
+	
 	@FindBy(name = "input.wpcf7-form-control.wpcf7-submit")
 	protected WebElement download;
 

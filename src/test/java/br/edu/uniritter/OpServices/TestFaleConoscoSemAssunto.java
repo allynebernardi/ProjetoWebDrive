@@ -9,45 +9,45 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import br.edu.uniritter.interacao.DownloadInteracao;
+import br.edu.uniritter.interacao.FaleConnoscoSemAssuntoInteracao;
+
 public class TestFaleConoscoSemAssunto {
-  private WebDriver driver;
-  private String baseUrl;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
-
-  @Before
-  public void setUp() throws Exception {
-    driver = new FirefoxDriver();
-    baseUrl = "http://www.opservices.com.br/";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-  }
-
+	private StringBuffer verificationErrors = new StringBuffer();
+	private FaleConnoscoSemAssuntoInteracao faleconosco;
+	private boolean acceptNextAlert = true;
+	@Before
+	public void setUp() throws Exception {
+		Util.init();
+		faleconosco = new FaleConnoscoSemAssuntoInteracao();
+	}
   @Test
   public void testFaleComoscoSemAssunto() throws Exception {
-    driver.get(baseUrl + "/download-sucesso/?ppt=c3de7eba6ad2fee1c3eeeefdd04cf6bd");
-    driver.findElement(By.linkText("Fale Conosco")).click();
-    driver.findElement(By.id("fname")).clear();
-    driver.findElement(By.id("fname")).sendKeys("Teste Fale Conosco Sem Assunto");
-    driver.findElement(By.id("lname")).clear();
-    driver.findElement(By.id("lname")).sendKeys("Teste");
-    driver.findElement(By.name("email")).clear();
-    driver.findElement(By.name("email")).sendKeys("Teste@gmail.com");
-    driver.findElement(By.name("telefone")).clear();
-    driver.findElement(By.name("telefone")).sendKeys("111111111111111111");
-    driver.findElement(By.name("empresa")).clear();
-    driver.findElement(By.name("empresa")).sendKeys("Teste");
-    driver.findElement(By.name("cidade")).clear();
-    driver.findElement(By.name("cidade")).sendKeys("Porto Alegre");
-    driver.findElement(By.name("estado")).clear();
-    driver.findElement(By.name("estado")).sendKeys("RS");
-    driver.findElement(By.name("mensagem")).clear();
-    driver.findElement(By.name("mensagem")).sendKeys("teste");
-    driver.findElement(By.cssSelector("input.wpcf7-form-control.wpcf7-submit")).click();
+	  
+	  
+	  Util.driver.get(Util.URL_BASE + "/download-sucesso/?ppt=c3de7eba6ad2fee1c3eeeefdd04cf6bd");
+	  faleconosco.PaginaInicial();
+	  faleconosco.clearName();
+	  faleconosco.inputName();
+	  faleconosco.clearProfissao();
+	  faleconosco.inputProfissao();
+	  faleconosco.clearEmail();
+	  faleconosco.inputEmail();
+	  faleconosco.clearTelefone();
+	  faleconosco.inputTelefone();
+	  faleconosco.clearEmpresa();
+	  faleconosco.inputEmpresa();
+	  faleconosco.clearCidade();
+	  faleconosco.inputCidade();
+	  faleconosco.clearEstado();
+	  faleconosco.inputEstado();
+	  faleconosco.Download();
+  
   }
 
   @After
   public void tearDown() throws Exception {
-    driver.quit();
+    Util.driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);
@@ -56,7 +56,7 @@ public class TestFaleConoscoSemAssunto {
 
   private boolean isElementPresent(By by) {
     try {
-      driver.findElement(by);
+      Util.driver.findElement(by);
       return true;
     } catch (NoSuchElementException e) {
       return false;
@@ -65,7 +65,7 @@ public class TestFaleConoscoSemAssunto {
 
   private boolean isAlertPresent() {
     try {
-      driver.switchTo().alert();
+      Util.driver.switchTo().alert();
       return true;
     } catch (NoAlertPresentException e) {
       return false;
@@ -74,7 +74,7 @@ public class TestFaleConoscoSemAssunto {
 
   private String closeAlertAndGetItsText() {
     try {
-      Alert alert = driver.switchTo().alert();
+      Alert alert = Util.driver.switchTo().alert();
       String alertText = alert.getText();
       if (acceptNextAlert) {
         alert.accept();
