@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 import br.edu.uniritter.OpServices.Util;;
 
 public class DonwloadPage {
-	@FindBy (linkText = "OpServices - Gerenciamento de TI e Processos de Negócios")
+	@FindBy (id = "menu-item-5701")
     protected WebElement paginaInicial;
 	
 	@FindBy (id = "featured-button-download")
     protected WebElement cadastro;
 	
-	@FindBy (id = "Fale Conosco")
+	@FindBy (id = "menu-item-37")
     protected WebElement faleConosco;
 	
 	@FindBy(id = "fname")

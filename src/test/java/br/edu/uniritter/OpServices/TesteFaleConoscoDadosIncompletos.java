@@ -47,7 +47,7 @@ public class TesteFaleConoscoDadosIncompletos {
 
 	@After
 	public void tearDown() throws Exception {
-		//Util.driver.quit();
+		Util.driver.quit();
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
 			fail(verificationErrorString);
