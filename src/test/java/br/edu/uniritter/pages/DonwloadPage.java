@@ -10,7 +10,7 @@ public class DonwloadPage {
 	@FindBy (id = "menu-item-5701")
     protected WebElement paginaInicial;
 	
-	@FindBy (className = "large-12 columns")
+	@FindBy (className = "row")
     protected WebElement cadastro;
 	
 	@FindBy (id = "menu-item-37")
@@ -40,7 +40,7 @@ public class DonwloadPage {
 	@FindBy(name = "mensagem")
 	protected WebElement mensagem;
 	
-	@FindBy(className = "large-12 columns")
+	@FindBy(className = "row")
 	protected WebElement download;
 
 		
