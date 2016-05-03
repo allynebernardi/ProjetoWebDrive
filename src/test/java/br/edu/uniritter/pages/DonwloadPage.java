@@ -10,7 +10,7 @@ public class DonwloadPage {
 	@FindBy (id = "menu-item-5701")
     protected WebElement paginaInicial;
 	
-	@FindBy (id = "featured-button-download")
+	@FindBy (className = "large-12 columns")
     protected WebElement cadastro;
 	
 	@FindBy (id = "menu-item-37")
@@ -40,7 +40,7 @@ public class DonwloadPage {
 	@FindBy(name = "mensagem")
 	protected WebElement mensagem;
 	
-	@FindBy(name = "input.wpcf7-form-control.wpcf7-submit")
+	@FindBy(className = "large-12 columns")
 	protected WebElement download;
 
 		
