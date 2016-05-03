@@ -26,7 +26,7 @@ public class TestEmailInvalido {
 	@Test
 	public void testEmailInvaLido() throws Exception {
 
-		Util.driver.get(Util.URL_BASE + "/#q=opservices&gws_rd=cr");
+		Util.driver.get(Util.URL_BASE + "download/");
 		downloadInteracao.PaginaInicial();
 		downloadInteracao.Cadastro();
 		downloadInteracao.clearName();

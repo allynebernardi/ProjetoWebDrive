@@ -23,8 +23,8 @@ public class TesteFaleConoscoDadosIncompletos {
 	}
 
 	@Test
-	public void testEFaleConoscoDadosIncompletos() throws Exception {
-		Util.driver.get(Util.URL_BASE + "/download-sucesso/?ppt=c3de7eba6ad2fee1c3eeeefdd04cf6bd");
+	public void testeFaleConoscoDadosIncompletos() throws Exception {
+		Util.driver.get(Util.URL_BASE + "fale-conosco/");
 
 		faleconoscointeracao.PaginaInicial();
 		faleconoscointeracao.clearName();
@@ -47,7 +47,7 @@ public class TesteFaleConoscoDadosIncompletos {
 
 	@After
 	public void tearDown() throws Exception {
-		Util.driver.quit();
+		//Util.driver.quit();
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
 			fail(verificationErrorString);

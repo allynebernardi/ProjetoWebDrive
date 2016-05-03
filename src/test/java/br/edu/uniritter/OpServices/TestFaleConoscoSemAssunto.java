@@ -25,7 +25,7 @@ public class TestFaleConoscoSemAssunto {
   public void testFaleComoscoSemAssunto() throws Exception {
 	  
 	  
-	  Util.driver.get(Util.URL_BASE + "/download-sucesso/?ppt=c3de7eba6ad2fee1c3eeeefdd04cf6bd");
+	  Util.driver.get(Util.URL_BASE + "fale-conosco/");
 	  faleconosco.PaginaInicial();
 	  faleconosco.clearName();
 	  faleconosco.inputName();
