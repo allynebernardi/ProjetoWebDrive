@@ -16,6 +16,7 @@ public class TestFaleConoscoSemAssunto {
 	private StringBuffer verificationErrors = new StringBuffer();
 	private FaleConnoscoSemAssuntoInteracao faleconosco;
 	private boolean acceptNextAlert = true;
+	
 	@Before
 	public void setUp() throws Exception {
 		Util.init();

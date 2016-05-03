@@ -12,11 +12,12 @@ import org.openqa.selenium.NoSuchElementException;
 
 import br.edu.uniritter.interacao.DownloadInteracao;
 
-public class TestEmailInvalido {
+public class TestDownloadEmailInvalido {
 
 	private StringBuffer verificationErrors = new StringBuffer();
 	private DownloadInteracao downloadInteracao;
 	private boolean acceptNextAlert = true;
+	
 	@Before
 	public void setUp() throws Exception {
 		Util.init();
